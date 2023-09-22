@@ -7,3 +7,76 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+.zhanna {
+  height: 700px;
+  width: 100%;
+  background-image: url(./img/bg_zhanna.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 36px 135px;
+  .header {
+    ul {
+      display: flex;
+      gap: 48px;
+      li {
+        a {
+          text-decoration: none;
+          color: #FCEBEB;
+          font-family: Kadwa;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 151.9%; 
+          &:hover {
+            color: #d99191;
+          }
+        }
+      }
+    }
+  }
+  .title {
+    h1 {
+      width: 409px;
+      height: auto;
+      margin-top: 70px;
+      color: #FCEBEB;
+      font-family: Kadwa;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 151.9%; 
+    }
+    p {
+      width: 300px;
+      height: 200px;
+      color: #d17a7a;
+      font-family: Kadwa;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 151.9%; 
+      margin: 40px 0;
+    }
+    button {
+      width: 250px;
+      height: 88px;
+      border-radius: 20px;
+      background: #F05F5C;
+      color: #FCEBEB;
+      font-family: Kadwa;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 151.9%;
+      &:hover {
+        background: #FCEBEB;
+        color:  #F05F5C;
+        svg {
+          path {
+            fill: #F05F5C;
+          }
+        }
+      }
+    }
+  }
+}
