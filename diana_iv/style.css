@@ -1,0 +1,32 @@
+.content h2 {
+    color: black;
+font-family: Josefin Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+text-transform: uppercase;
+}
+.content p {
+    color: black;
+font-family: Josefin Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px;
+letter-spacing: 1.6px;
+}
+button {
+    width: 213px;
+height: 60px;
+background: #5373FD;
+color: var(--White, #FFF);
+text-align: center;
+font-family: Aleo;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+letter-spacing: 1.12px;
+text-transform: uppercase;
+}
