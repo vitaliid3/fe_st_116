@@ -1,14 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 * {
   box-sizing: border-box;
 }
-
 .container {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.safronov .synevir .synevir-content, .safronov .bazaltove .bazaltove-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+.safronov .synevir .synevir-content .image-text, .safronov .bazaltove .bazaltove-content .image-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.safronov .synevir .synevir-content .image-text img, .safronov .bazaltove .bazaltove-content .image-text img {
+  max-width: 500px;
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+}
+.safronov .synevir .synevir-content .image-text .rigth, .safronov .bazaltove .bazaltove-content .image-text .rigth {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.safronov {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.6447829132) 0%, rgba(132, 244, 96, 0.4094887955) 100%);
+}
+.safronov__firstscreen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/basaltic_1.jpg");
+  background-size: 100% 100%;
+}
+.safronov__firstscreen h1 {
+  color: #fff;
+  font-family: Cormorant Infant;
+  font-size: 56px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1.2px;
+}
+.safronov p {
+  color: #000;
+  font-family: Cormorant Infant;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+}
+.safronov p b {
+  color: #000;
+  font-family: Cormorant Infant;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+.safronov h2 {
+  color: #000;
+  font-family: Cormorant Infant;
+  font-size: 44px;
+  font-weight: 600;
+  font-style: normal;
+}
+.safronov .bazaltove {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 100px auto;
+}
+.safronov .bazaltove .slideshow {
+  align-self: center;
+  max-width: 700px;
+  width: 100%;
+  max-height: 500px;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+  position: relative;
+}
+.safronov .bazaltove .slideshow .slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.safronov .bazaltove .slideshow .slides input[name=bazaltove-slides] {
+  position: absolute;
+  visibility: hidden;
+}
+.safronov .bazaltove .slideshow .slides .slide {
+  width: 25%;
+}
+.safronov .bazaltove .slideshow .slides .slide img {
+  height: 100%;
+  width: 100%;
+}
+.safronov .bazaltove .slideshow .slides #bazaltove-1:checked ~ .slide1 {
+  margin-left: 0;
+}
+.safronov .bazaltove .slideshow .slides #bazaltove-2:checked ~ .slide2 {
+  margin-left: -25%;
+}
+.safronov .bazaltove .slideshow .slides #bazaltove-3:checked ~ .slide3 {
+  margin-left: -50%;
+}
+.safronov .bazaltove .slideshow .slides #bazaltove-4:checked ~ .slide4 {
+  margin-left: -75%;
+}
+.safronov .bazaltove .slideshow .navigation {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.safronov .bazaltove .slideshow .navigation .nav {
+  height: 17px;
+  width: 17px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.safronov .bazaltove .slideshow .navigation .nav:hover {
+  background: #7fe327;
+}
+.safronov .synevir {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 100px auto;
+}
+.safronov .synevir .slideshow {
+  align-self: center;
+  max-width: 700px;
+  width: 100%;
+  max-height: 500px;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+  position: relative;
+}
+.safronov .synevir .slideshow .slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.safronov .synevir .slideshow .slides input[name=synevir-slides] {
+  position: absolute;
+  visibility: hidden;
+}
+.safronov .synevir .slideshow .slides .slide {
+  width: 25%;
+}
+.safronov .synevir .slideshow .slides .slide img {
+  height: 100%;
+  width: 100%;
+}
+.safronov .synevir .slideshow .slides #synevir-1:checked ~ .slide1 {
+  margin-left: 0;
+}
+.safronov .synevir .slideshow .slides #synevir-2:checked ~ .slide2 {
+  margin-left: -25%;
+}
+.safronov .synevir .slideshow .slides #synevir-3:checked ~ .slide3 {
+  margin-left: -50%;
+}
+.safronov .synevir .slideshow .slides #synevir-4:checked ~ .slide4 {
+  margin-left: -75%;
+}
+.safronov .synevir .slideshow .navigation {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.safronov .synevir .slideshow .navigation .nav {
+  height: 17px;
+  width: 17px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.safronov .synevir .slideshow .navigation .nav:hover {
+  background: #7fe327;
 }
 
 .shashko {
