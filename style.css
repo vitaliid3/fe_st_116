@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
@@ -10,6 +11,37 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.Gurmak {
+  font-family: MedievalSharp;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.Gurmak h2 {
+  font-size: 60px;
+}
+.Gurmak h2:hover {
+  color: #832313;
+  font-size: 62px;
+}
+.Gurmak p {
+  margin-top: 20px;
+  font-size: 20px;
+  width: 388px;
+}
+.Gurmak p:hover {
+  color: #832313;
+  font-size: 21px;
+}
+.Gurmak img {
+  border-radius: 10%;
+  width: 400px;
+  height: 400px;
+}
+.Gurmak img:hover {
+  content: url(./img/gurmak2.webp);
+}/*# sourceMappingURL=style.css.map */
 
 .safronov .synevir .synevir-content, .safronov .bazaltove .bazaltove-content {
   display: flex;

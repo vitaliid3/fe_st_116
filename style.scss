@@ -11,6 +11,36 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+.Gurmak {
+  font-family: MedievalSharp;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 60px;
+  }
+  h2:hover {
+    color: #832313;
+    font-size: 62px;
+  }
+  p {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 388px;
+  }
+  p:hover {
+    color: #832313;
+    font-size: 21px;
+  }
+  img {
+    border-radius: 10%;
+    width: 400px;
+    height: 400px;
+  }
+  img:hover {
+    content:url(./img/gurmak2.webp);
+  }
+}
 %tpl_content {
   display: flex;
   flex-direction: column;
